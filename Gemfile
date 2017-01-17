@@ -51,7 +51,8 @@ gem "fastercsv", "~>1.5.4", :platforms => :ruby_18
 
 gem 'mail', '~>2.5.4'
 
-gem 'nokogiri'
+# 1.6.8 includes a security fix. 1.7 drops support for Ruby 1.9.3
+gem 'nokogiri', ">=1.6.8", "<1.7"
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
