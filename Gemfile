@@ -56,6 +56,9 @@ gem 'acts_as_list', "~>0.4.0"
 gem 'nokogiri', ">=1.6.8", "<1.7"
 gem 'mail', '~>2.5.4'
 
+# 11 removes #last_comment method, which rspec-core <3.4.4 uses.
+gem "rake", "<11"
+
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
