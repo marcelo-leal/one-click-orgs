@@ -52,7 +52,8 @@ gem 'meekster', :git => "git://github.com/oneclickorgs/meekster.git", :tag => 'v
 gem 'pdf_form_filler', '~>0.0.3'
 gem 'rticles', '~>0.2.4'
 gem 'acts_as_list', "~>0.4.0"
-gem "nokogiri"
+# 1.6.8 includes a security fix. 1.7 drops support for Ruby 1.9.3
+gem 'nokogiri', ">=1.6.8", "<1.7"
 gem 'mail', '~>2.5.4'
 
 # Bundle gems for the local environment. Make sure to
