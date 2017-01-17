@@ -54,6 +54,9 @@ gem 'mail', '~>2.5.4'
 # 1.6.8 includes a security fix. 1.7 drops support for Ruby 1.9.3
 gem 'nokogiri', ">=1.6.8", "<1.7"
 
+# 11 removes #last_comment method, which rspec-core <3.4.4 uses.
+gem "rake", "<11"
+
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
